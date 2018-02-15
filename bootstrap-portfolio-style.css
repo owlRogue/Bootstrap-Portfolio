@@ -8,11 +8,12 @@
 }
 
 .navbar.navbar-default {
-    height: auto;
     width: 960px%;
     background: #ffffff;
     border-radius: 0px;
     padding-left: 80px;
+    border-color: none;
+    border: 0px;
 }
 
 .navbar-default >li>a:link {
@@ -36,8 +37,11 @@
     border: 0px;
 }
 
-.nav-tabs >ul {
-    background-color: yellow;
+.nav.nav-tabs {
+    border-bottom: 0px;
+    width: auto;
+    padding: 5px;
+    display: inline;
 }
 
 /* --------------------------------------- B O D Y----------------------------------- */
@@ -52,40 +56,36 @@
 }
 
 body {
-    width: auto;
-    height: auto;
     background-repeat: repeat;
     background-attachment: absolute;
     background-image: url("assets/random_grey_variations/random_grey_variations.png")
   };
 
 .tabcontent {
-    background-color: blue;
-    max-width: 960px;
-    margin-bottom: 20px;
-    width: auto;
-    height: auto;
+    max-width: 660px;
 }
 
 .container-fluid {
     padding: 10px;
-
 }
 
 .container-fluid-2 {
     padding: 10px;
-
+    
 }
 
 .col-md-8 {
-    float: left;
-    width: 660px;
-    padding: 10px;
-    background: white;
     margin-right: 30px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+    margin-left: 80px;
+    max-width: 660px;
 }
+
+#aboutTab, #portfolioTab, #contactTab {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
 
 li {
     display: inline;
@@ -99,17 +99,17 @@ li {
 }
 
 .col-md-4 {
-    width: 270px;
     padding: 10px;
     background: white;
-    margin-left: 0px;
-    display: table;
-    table-layout: fixed;
-    text-align: center;
+    margin-left: 30px;
+    max-width: 270px;
+
 }
 
-.footer {
+.connect-content {
+    max-width: 270px;
     text-align: center;
+
 }
 
 /* --------------------------------------- F O R M ----------------------------------- */
@@ -153,15 +153,35 @@ select,
     color: #4aaaae;
 }
 
+/* --------------------------------------- F O O T E R ----------------------------------- */
+
+.footer {
+    text-align: center;
+};
+
+    #footer-accent {
+        position: top;
+        width: auto;
+        height: 8px;
+        background-color: #4aaaa5;
+      };
 
 
 /* ----------- M E D I A   Q U E R I E S ---------- */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 920px) {
     .navbar.navbar-default {
         margin-right: 10px;
         width: auto;
-        overflow: hidden;
-        margin-left: 10px;
+        margin-left: 0px;
         padding-left: 0px;
-    }
+    };
+
+    .col-md-4 {
+        padding: 10px;
+        width: 920px%;
+    }    
+
+    .connect-content {
+        margin-left: 10px;
+    };

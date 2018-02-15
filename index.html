@@ -9,10 +9,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/Users/koltynpalmer/dev/portfolio_dev/self-made-templates/sticky-footer-navbar.css">
     <link rel="stylesheet" href="/Users/koltynpalmer/dev/portfolio_dev/Bootstrap-Portfolio/bootstrap-portfolio-style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
@@ -42,7 +41,7 @@
     </nav>
 
 
-        <div class="container-fluid-2">
+        <div class="row">
                 <div class="col-md-8">
 
                 <div id="aboutTab" class="tabcontent">
@@ -128,7 +127,7 @@
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
             <div class="col-md-4">
-
+            <div class="connect-content">
                 <h3 id="h3connect">Connect with Me</h3>
                 <hr>
                 <li>
@@ -148,19 +147,22 @@
                         <img src="assets/images/stackOverflowCircleBound.png" width="50" height="50">
                     </a>
                 </li>
-
+            </div>
         </div>
+    </div>
 
-</div>
+
+
 
 
         <footer class="footer">
-            <div class="container" id="footer-accent"></div>
+            <div id="footer-accent"></div>
             <div class="container" text-align="center">
                 <p class="text-muted"></p> Copyright © 2018 Koltyn Palmer</p>
             </div>
         </footer>
-    </div>
+
+
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -181,6 +183,8 @@
             evt.currentTarget.className += " active";
         }
     </script>
+
+
 </body>
 
 </html>
