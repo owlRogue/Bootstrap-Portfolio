@@ -40,7 +40,7 @@
 .nav.nav-tabs {
     border-bottom: 0px;
     width: auto;
-    padding: 5px;
+    height: auto;
     display: inline;
 }
 
@@ -58,15 +58,16 @@
 body {
     background-repeat: repeat;
     background-attachment: absolute;
-    background-image: url("assets/random_grey_variations/random_grey_variations.png")
-  };
+    background-image: url("assets/random_grey_variations/random_grey_variations.png");
+  }
 
 .tabcontent {
-    max-width: 660px;
+    max-width: 600px;
 }
 
 .container-fluid {
     padding: 10px;
+    height: auto;
 }
 
 .container-fluid-2 {
@@ -75,9 +76,10 @@ body {
 }
 
 .col-md-8 {
-    margin-right: 30px;
+    margin-right: 15px;
     margin-left: 80px;
-    max-width: 660px;
+    float: left;
+    padding: 0px;
 }
 
 #aboutTab, #portfolioTab, #contactTab {
@@ -101,15 +103,20 @@ li {
 .col-md-4 {
     padding: 10px;
     background: white;
-    margin-left: 30px;
+    margin-left: 15px;
     max-width: 270px;
+    float: left;
 
+}
+
+.row {
+    overflow: hidden;
 }
 
 .connect-content {
     max-width: 270px;
     text-align: center;
-
+    vertical-align: center;
 }
 
 /* --------------------------------------- F O R M ----------------------------------- */
@@ -157,6 +164,11 @@ select,
 
 .footer {
     text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80px;
 };
 
     #footer-accent {
@@ -169,18 +181,22 @@ select,
 
 /* ----------- M E D I A   Q U E R I E S ---------- */
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
     .navbar.navbar-default {
         margin-right: 10px;
         width: auto;
         margin-left: 0px;
         padding-left: 0px;
-    };
+    }
 
     .col-md-4 {
         padding: 10px;
-        width: 920px%;
+        width: 100%;
     }    
+
+    .col-md-8 {
+        width: 600px;
+    }
 
     .connect-content {
         margin-left: 10px;
