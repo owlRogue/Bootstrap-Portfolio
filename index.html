@@ -26,8 +26,6 @@
                 <a class="navbar-brand">Koltyn Palmer</a>
             </div>
 
-            <div class="nav navbar-nav" id="navbar">
-
                 <ul class="nav nav-tabs">
                     <li class="active">
                         <a data-toggle="tab" href="#aboutTab" class="tablinks" onclick="openTab(event, 'aboutTab')">ABOUT</a>
@@ -39,14 +37,13 @@
                         <a data-toggle="tab" href="#contactTab" class="tablinks" onclick="openTab(event, 'contactTab')">CONTACT</a>
                     </li>
                 </ul>
-            </div>
+
         </div>
     </nav>
 
-    <div class="main-container">
-        <div class="container-fluid">
 
-            <div class="col-md-8" style="color:#636363" font-family="Josefin Sans, sans-serif" font-weight=700 max-height=50px>
+        <div class="container-fluid-2">
+                <div class="col-md-8">
 
                 <div id="aboutTab" class="tabcontent">
                     <h3>ABOUT</h3>
@@ -67,12 +64,11 @@
                         me. And that, is why I write poetry.
                     </a1>
                 </div>
-            </div>
+
 
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
             <div id="portfolioTab" class="tabcontent">
-                <div class="container">
                     <h3>PORTFOLIO</h3>
                     <hr>
                     <ul>
@@ -108,20 +104,14 @@
                     </ul>
                 </div>
 
-            </div>
+
 
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
             <div id="contactTab" class="tabcontent">
-                <h3>About Me</h3>
-                <hr>
-
-                <div class="container">
                     <h3>Contact Form</h3>
                     <hr>
-                    <div class="container" id="shell">
-
-                        <form action="/action_page.php">
+                        <form action="/action_page.php" class="container" id="shell">
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name...">
                             <label for="email">Email</label>
@@ -130,17 +120,14 @@
                             <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
                             <input type="submit" value="Submit">
                         </form>
-
-                    </div>
                 </div>
 
-            </div>
 
+        </div>
 
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-
-            <div class="col-md-4" style="color:#636363" font-family="Josefin Sans, sans-serif" font-weight=400 max-height=50px font-size=>
+            <div class="col-md-4">
 
                 <h3 id="h3connect">Connect with Me</h3>
                 <hr>
@@ -162,16 +149,9 @@
                     </a>
                 </li>
 
-
-
-            </div>
-
-
-
-
         </div>
 
-
+</div>
 
 
         <footer class="footer">

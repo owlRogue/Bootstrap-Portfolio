@@ -11,21 +11,23 @@
     height: auto;
     width: 960px%;
     background: #ffffff;
-    top: 0;
     border-radius: 0px;
     padding-left: 80px;
 }
 
-.navbar-default .navbar-nav>li>a:link {
+.navbar-default >li>a:link {
     color: #777777;
 }
 
-.navbar-default .navbar-nav>li>a:visited {
-    color: #8fabc5;
+.navbar-default li>a:visited {
+    color: #715588;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default li>a:hover {
     color: #4aaaa5;
+    background-color: white;
+    border-radius: 0px;
+    border: 0px;
 }
 
 .nav-tabs>li.active>a,
@@ -34,10 +36,11 @@
     border: 0px;
 }
 
-.nav-tabs {
-    border-bottom: 0px;
-    border: 0px;
+.nav-tabs >ul {
+    background-color: yellow;
 }
+
+/* --------------------------------------- B O D Y----------------------------------- */
 
 .tab {
     overflow: hidden;
@@ -49,17 +52,29 @@
 }
 
 body {
-    max-width: 960px;
+    width: auto;
     height: auto;
     background-repeat: repeat;
     background-attachment: absolute;
-    padding: 10px;
-    margin-left: 30px;
     background-image: url("assets/random_grey_variations/random_grey_variations.png")
   };
 
+.tabcontent {
+    background-color: blue;
+    max-width: 960px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+}
+
 .container-fluid {
-    padding-left: 10px;
+    padding: 10px;
+
+}
+
+.container-fluid-2 {
+    padding: 10px;
+
 }
 
 .col-md-8 {
@@ -75,6 +90,26 @@ body {
 li {
     display: inline;
     padding: 0px 5px 0px 5px;
+}
+
+
+.wrap {
+    float: left;
+    margin-right: 10px;
+}
+
+.col-md-4 {
+    width: 270px;
+    padding: 10px;
+    background: white;
+    margin-left: 0px;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
 }
 
 /* --------------------------------------- F O R M ----------------------------------- */
@@ -109,6 +144,7 @@ input[type=submit]:hover {
     border-radius: 2px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: auto;
 }
 
 input[type=text],
@@ -117,24 +153,7 @@ select,
     color: #4aaaae;
 }
 
-.wrap {
-    float: left;
-    margin-right: 10px;
-}
 
-.col-md-4 {
-    width: 270px;
-    padding: 10px;
-    background: white;
-    margin-left: 0px;
-    display: table;
-    table-layout: fixed;
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-}
 
 /* ----------- M E D I A   Q U E R I E S ---------- */
 
