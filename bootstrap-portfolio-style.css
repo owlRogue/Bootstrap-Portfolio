@@ -1,0 +1,79 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar-default .navbar-nav>li>a:link {
+    color: #777777;
+}
+    .navbar-default .navbar-nav>li>a:visited {
+    color: #8fabc5;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+    color: #4aaaa5;
+  }
+  
+body {
+    background-image: url("assets/random_grey_variations/random_grey_variations.png")
+  };
+
+.hr {
+  float: left;
+  width: auto;
+}
+
+
+body {
+  width: auto;
+  height: auto;
+  background-repeat: repeat;
+  background-attachment: absolute;
+}
+
+li {
+  display: inline;
+  padding: 0px 5px 0px 5px;
+}
+
+
+.wrap {
+    float: left;
+  }
+
+  .col-md-8 {
+    float: left;
+    width: 660px;
+    padding: 10px;
+    background: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+  }
+
+  .col-md-4 {
+    width: 270px;
+    padding: 10px;
+    background: white;
+    margin-left: 0px;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+  }
+
+.footer {
+    text-align: center;
+}
+
+
+
+
+
+/* ----------- M E D I A   Q U E R I E S ---------- */
+
+@media screen and (max-width: 1020px) {
+    .navbar.navbar-default {
+      margin-right: 10px;
+      width: auto;
+      overflow: hidden;
+      margin-left: 10px;
+    }
